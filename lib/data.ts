@@ -1,0 +1,57 @@
+// lib/data.ts
+export const ROLES = ["Web Developer", "Software Engineer", "Fullstack Developer"];
+
+export const projects = [
+  {
+    title: "E-ecommerce",
+    badge: "Security",
+    badgeColor: "#83c5be",
+    desc: "AI-powered platform developed during hackathon at GDGOC BINUS @Alam Sutera to help teachers automatically generate quizzes.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "ERPEEL SCHOOL PORTAL",
+    badge: "Education",
+    badgeColor: "#22C55E",
+    desc: "Modern, responsive program portal for Software Engineering students to share curriculums, events, and achievements.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "TOKO CASUAL",
+    badge: "E-Commerce",
+    badgeColor: "#F59E0B",
+    desc: "Casual clothing e-commerce web application with authentication, product catalog, shopping cart, and checkout.",
+    tech: ["PHP", "HTML5", "CSS3"],
+  },
+];
+
+export const certificates = [
+  { title: "Game Design: From Hobby to Ho hooks - Hooked In Minutes, Engaged For Days", image: "/sertifikat1.jpeg" },
+  { title: "Form Vision To Version 1.0 : Roadmapping Your Game Effectively", image: "/sertifikat2.jpeg" },
+  { title: "Introduction to Capture the Flag", image: "/sertifikat3.jpeg" },
+  { title: "Coding Ai untuk Masa Depan Edukasi Digital", image: "/sertifikat4.jpeg" },
+  { title: "Ai & Ethics in Game Development", image: "/sertifikat5.jpeg" },
+  { title: "Cloud Computing Essentials", image: "/sertifikat6.jpeg" },
+  { title: "Cybersecurity Fundamental", image: "/sertifikat7.jpeg" },
+  { title: "UI/UX Design Basic", image: "/sertifikat8.jpeg" },
+  { title: "Artificial Intelligence Intro", image: "/sertifikat9.jpeg" },
+  { title: "Data Analytics with SQL", image: "/sertifikat10.jpeg" },
+];
+export const allTech = [
+  { name: "HTML5", color: "#C96A4A", sub: "Markup", icon: "html.png" },
+  { name: "CSS3", color: "#3F6E9E", sub: "Styling", icon: "css.png" },
+  { name: "JavaScript", color: "#A88F2C", sub: "Scripting", icon: "js.png" },
+  { name: "TypeScript", color: "#3F6E9E", sub: "Fullstack", icon: "typescript.png" },
+  { name: "React", color: "#3E8E8E", sub: "Frontend Library", icon: "react.png" },
+  { name: "Next.js", color: "#4A4A4A", sub: "Fullstack", icon: "nextjs.png" },
+  { name: "Tailwind CSS", color: "#4C8C8C", sub: "Styling", icon: "tailwindcss.png" },
+  { name: "PHP", color: "#5D5F9E", sub: "Backend", icon: "php.png" },
+  { name: "GO Lang", color: "#3E8E8E", sub: "Backend / Microservices", icon: "go.png" },
+  { name: "Laravel", color: "#C25C4A", sub: "PHP Framework", icon: "laravel.png" },
+  { name: "MySQL", color: "#4C6E9E", sub: "DBMS", icon: "mysql.png" },
+  { name: "PostgreSQL", color: "#4C6E9E", sub: "DBMS", icon: "postgresql.png" },
+  { name: "MongoDB", color: "#5A8A5A", sub: "DBMS", icon: "mongodb.png" },
+  { name: "Git", color: "#C25C4A", sub: "Ops", icon: "git.png" },
+  { name: "VSCode", color: "#3F6E9E", sub: "Ops", icon: "vscode.png" },
+  { name: "Bootstrap", color: "#6E5A9E", sub: "Ops", icon: "bootstrap.png" },
+];
