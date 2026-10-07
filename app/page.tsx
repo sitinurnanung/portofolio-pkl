@@ -1,4 +1,3 @@
-// app/page.tsx
 "use client";
 
 import { useState, useEffect } from "react";
@@ -9,18 +8,16 @@ import { About } from "@/sections/About";
 import { TechStackMarquee } from "@/sections/TechStackMarquee";
 import { Work } from "@/sections/Work";
 import { Contact } from "@/sections/Contact";
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { SplashScreen } from "@/components/ui/SplashScreen";
 import { ROLES } from "@/lib/data";
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(true);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const [splashVisible, setSplashVisible] = useState(true); // State untuk menampilkan splash
+  const [splashVisible, setSplashVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -28,7 +25,6 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Auto-detect active section saat scroll
   useEffect(() => {
     const sectionMap: Record<string, string> = {
       home: "Home",
@@ -55,11 +51,9 @@ export default function Home() {
     return () => observer.disconnect();
   }, []);
 
+  // Force light mode always
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    const isDarkMode = savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    setIsDark(isDarkMode);
-    document.documentElement.classList.toggle('dark', isDarkMode);
+    document.documentElement.classList.remove('dark');
   }, []);
 
   // Timer untuk menghilangkan splash setelah 3 detik
@@ -90,12 +84,6 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, [displayText, isDeleting, roleIndex]);
 
-  const toggleTheme = () => {
-    const newDark = !isDark;
-    setIsDark(newDark);
-    document.documentElement.classList.toggle('dark', newDark);
-    localStorage.setItem('theme', newDark ? 'dark' : 'light');
-  };
 
   const scrollToSection = (id: string) => {
     const lower = id.toLowerCase();
@@ -130,7 +118,7 @@ export default function Home() {
         <div className="container mx-auto flex items-center justify-between px-6 py-5 relative z-[9999]">
           <div className="w-10"></div>
           <Navbar activeSection={activeSection} onNavigate={scrollToSection} />
-          <ThemeToggle isDark={isDark} toggleTheme={toggleTheme} />
+          <div className="w-10"></div>
         </div>
       </div>
 

@@ -30,7 +30,11 @@ export function Hero({ displayText }: HeroProps) {
               ))}
             </div>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start mt-8">
-              <a href="#work" className="btn-primary">
+              <a
+                href="#work"
+                className="btn-primary"
+                style={{ backgroundColor: '#3A5A40', boxShadow: '0 4px 16px rgba(58, 90, 64, 0.35)' }}
+              >
                 MY WORK <span className="group-hover:translate-x-1 transition-transform">→</span>
               </a>
             </div>
@@ -38,15 +42,16 @@ export function Hero({ displayText }: HeroProps) {
 
           <div className="relative group flex-shrink-0">
             <div className="absolute -inset-4 rounded-full blur-2xl transition-all duration-500 group-hover:blur-3xl bg-primary-glow" />
-            <div className="absolute inset-0 rounded-full border-2 opacity-30 animate-spin-slow border-primary" />
+            <div className="absolute inset-0 rounded-full border-2 opacity-30 animate-spin-slow" style={{borderColor: '#3A5A40'}} />
             <div className="absolute inset-0 rounded-full bg-primary-glow" />
             <Image
-              src="/cat.jpg"
+              src="/photo.jpg"
               alt="Profile Photo"
               width={280}
               height={280}
               priority
-              className="rounded-full border-4 relative z-10 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl border-primary"
+              className="rounded-full relative z-10 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl"
+              style={{border: '4px solid #3A5A40'}}
             />
           </div>
         </div>
