@@ -1,3 +1,4 @@
+// sections/Hero.tsx
 "use client";
 
 import Image from "next/image";
@@ -62,11 +63,12 @@ export function Hero({ displayText }: HeroProps) {
             />
             <div className="absolute inset-0 rounded-full bg-primary-glow" />
             <div className="relative animate-float">
+              {/* 👇 FOTO PROFIL 180×180 */}
               <Image
                 src="/photo.jpg"
                 alt="Profile Photo"
-                width={280}
-                height={280}
+                width={180}
+                height={180}
                 priority
                 className="rounded-full relative z-10 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl shadow-xl"
                 style={{ border: "4px solid #3A5A40" }}

@@ -163,7 +163,7 @@ export default function Home() {
 
       {/* Navbar with smooth slide-down entrance */}
       <div className="navbar animate-slide-down z-[9999] pointer-events-auto">
-        <div className="container mx-auto flex items-center justify-between px-6 py-5 relative z-[9999]">
+        <div className="container mx-auto flex items-center justify-between px-6 py-3 relative z-[9999]">
           <div className="w-10"></div>
           <Navbar activeSection={activeSection} onNavigate={scrollToSection} />
           <div className="w-10"></div>
