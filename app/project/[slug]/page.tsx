@@ -50,7 +50,7 @@ export default async function ProjectDetail({ params }: Props) {
           <img
             src={project.image}
             alt={project.title}
-            className="max-h-[150px] w-auto h-auto rounded-xl border-2 border-border"
+            className="max-h-[100px] w-auto h-auto rounded-xl border-2 border-border"
           />
         </div>
 
