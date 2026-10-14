@@ -1,3 +1,4 @@
+// sections/About.tsx
 export function About() {
   return (
     <section
@@ -8,18 +9,18 @@ export function About() {
         <h2 className="section-title text-text">PROFILE</h2>
       </div>
 
-      {/* flex-row SELALU (di HP juga) */}
-      <div className="flex flex-row items-start gap-4 sm:gap-6 md:gap-8 lg:gap-14">
-        
-        {/* ===== FOTO — KECIL DI HP ===== */}
-        <div className="w-[120px] sm:w-48 md:w-64 lg:w-72 flex-shrink-0 group reveal-left delay-100">
+      {/* RESPONSIF: di HP vertikal, di desktop horizontal */}
+      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-6 md:gap-8 lg:gap-14">
+
+        {/* ===== FOTO ===== */}
+        <div className="w-full sm:w-48 md:w-64 lg:w-72 flex-shrink-0 group reveal-left delay-100 max-w-[260px] sm:max-w-none">
           <div className="relative">
             <div
-              className="relative rounded-2xl sm:rounded-[1.75rem] p-2 sm:p-4 lg:p-5 shadow-xl transition-all duration-500 group-hover:-translate-y-1.5 group-hover:shadow-2xl"
+              className="relative rounded-2xl sm:rounded-[1.75rem] p-3 sm:p-4 lg:p-5 shadow-xl transition-all duration-500 group-hover:-translate-y-1.5 group-hover:shadow-2xl"
               style={{ backgroundColor: '#A3B18A' }}
             >
               <div className="relative aspect-[4/5] w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-inner">
-                {/* ===== FOTO PROFILE ===== */}
+                {/* FOTO PROFILE */}
                 <img
                   src="/photo.jpg"
                   alt="Foto Profil Siti Nur Hayati"
@@ -27,15 +28,15 @@ export function About() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
               </div>
-              <div className="pt-2 sm:pt-4 text-center">
+              <div className="pt-3 sm:pt-4 text-center">
                 <h3
-                  className="text-xs sm:text-lg lg:text-xl font-extrabold tracking-tight leading-tight"
+                  className="text-base sm:text-lg lg:text-xl font-extrabold tracking-tight leading-tight"
                   style={{ color: '#3A5A40' }}
                 >
                   Siti Nur Hayati
                 </h3>
                 <div
-                  className="hidden sm:flex items-center justify-center gap-1.5 text-[10px] sm:text-xs font-semibold mt-1.5"
+                  className="flex items-center justify-center gap-1.5 text-[10px] sm:text-xs font-semibold mt-1.5"
                   style={{ color: '#3A5A40' }}
                 >
                   <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -50,15 +51,15 @@ export function About() {
         </div>
 
         {/* ===== TEKS ===== */}
-        <div className="flex-1 flex flex-col justify-start reveal-right delay-200">
-          <div className="mb-2 sm:mb-5">
+        <div className="flex-1 flex flex-col justify-start reveal-right delay-200 w-full">
+          <div className="mb-2 sm:mb-5 text-left">
             <span className="badge inline-block text-[10px] sm:text-xs hover:scale-105 transition-transform duration-200">
               ABOUT ME
             </span>
           </div>
 
           <p
-            className="text-sm sm:text-base leading-relaxed text-justify hyphens-auto w-full"
+            className="text-sm sm:text-base leading-relaxed text-left w-full"
             style={{ color: '#3A5A40' }}
           >
             I am a Software Engineering student with an interest in web application development.

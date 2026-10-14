@@ -80,7 +80,8 @@ export function Contact() {
         </h2>
       </div>
 
-      <div className="flex flex-col md:flex-row rounded-2xl overflow-hidden shadow-xl reveal-scale delay-100">
+      {/* ✅ SELALU BERDAMPINGAN (flex-row) */}
+      <div className="flex flex-row rounded-2xl overflow-hidden shadow-xl reveal-scale delay-100">
         {/* LEFT PANEL — Form */}
         <div
           className="flex-1 min-w-0 p-3 sm:p-5 md:p-7 lg:p-10"
@@ -100,7 +101,6 @@ export function Contact() {
           </p>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:gap-4 lg:gap-5">
-            {/* Name */}
             <div>
               <label
                 className="block text-[9px] sm:text-[11px] md:text-xs font-bold tracking-widest mb-1"
@@ -120,7 +120,6 @@ export function Contact() {
               />
             </div>
 
-            {/* Email */}
             <div>
               <label
                 className="block text-[9px] sm:text-[11px] md:text-xs font-bold tracking-widest mb-1"
@@ -140,7 +139,6 @@ export function Contact() {
               />
             </div>
 
-            {/* Message */}
             <div>
               <label
                 className="block text-[9px] sm:text-[11px] md:text-xs font-bold tracking-widest mb-1"
@@ -160,7 +158,6 @@ export function Contact() {
               />
             </div>
 
-            {/* Submit */}
             <div className="flex items-center gap-4 mt-1 sm:mt-2 flex-wrap">
               <button
                 type="submit"
@@ -209,15 +206,10 @@ export function Contact() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between px-2 sm:px-3.5 lg:px-4 py-1.5 sm:py-2.5 lg:py-3 rounded-lg sm:rounded-xl bg-white text-[#3A5A40] font-bold text-[9px] sm:text-xs lg:text-sm tracking-wider hover:bg-[#DAD7CD] transition-colors duration-200 group"
+                  className="flex items-center gap-2 sm:gap-3 px-2 sm:px-3.5 lg:px-4 py-1.5 sm:py-2.5 lg:py-3 rounded-lg sm:rounded-xl bg-white text-[#3A5A40] font-bold text-[9px] sm:text-xs lg:text-sm tracking-wider hover:bg-[#DAD7CD] transition-colors duration-200"
                 >
-                  <span className="flex items-center gap-1.5 sm:gap-2.5 lg:gap-3 min-w-0">
-                    {link.icon}
-                    <span className="truncate">{link.name}</span>
-                  </span>
-                  <span className="text-[#588157] group-hover:translate-x-1 transition-transform flex-shrink-0">
-                    ↗
-                  </span>
+                  {link.icon}
+                  <span className="truncate">{link.name}</span>
                 </a>
               ))}
             </div>
@@ -239,11 +231,7 @@ export function Contact() {
                 strokeLinejoin="round"
                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
               />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
             <span>Bogor, Jawa Barat, Indonesia • SMK Plus Pelita Nusantara</span>
           </div>
