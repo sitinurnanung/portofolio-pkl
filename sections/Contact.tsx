@@ -80,7 +80,7 @@ export function Contact() {
         </h2>
       </div>
 
-      <div className="flex flex-row rounded-2xl overflow-hidden shadow-xl reveal-scale delay-100">
+      <div className="flex flex-col md:flex-row rounded-2xl overflow-hidden shadow-xl reveal-scale delay-100">
         {/* LEFT PANEL — Form */}
         <div
           className="flex-1 min-w-0 p-3 sm:p-5 md:p-7 lg:p-10"
