@@ -44,13 +44,13 @@ export default async function ProjectDetail({ params }: Props) {
           </span>
         </div>
 
-        {/* FOTO UTAMA PROJECT */}
+        {/* FOTO UTAMA PROJECT (diperkecil) */}
         <div className="flex justify-center mb-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={project.image}
             alt={project.title}
-            className="max-h-[250px] w-auto h-auto rounded-xl border-2 border-border"
+            className="max-h-[150px] w-auto h-auto rounded-xl border-2 border-border"
           />
         </div>
 
