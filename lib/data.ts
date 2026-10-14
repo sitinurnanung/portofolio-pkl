@@ -2,40 +2,53 @@ export const ROLES = ["Web Developer", "Software Engineer", "Fullstack Developer
 
 export const projects = [
   {
-    title: "E-ecommerce",
-    badge: "Security",
+    slug: "jam-digital",
+    title: "Jam Digital",
+    badge: "Utility",
     badgeColor: "#83c5be",
-    desc: "AI-powered platform developed during hackathon at GDGOC BINUS @Alam Sutera to help teachers automatically generate quizzes.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    desc: "Aplikasi jam digital berbasis web yang menampilkan waktu secara real-time.",
+    longDesc:
+      "Project ini dibuat untuk melatih pemahaman tentang Flask dan JavaScript. Jam menampilkan waktu secara real-time dengan tampilan yang clean dan minimalis. Dibuat menggunakan Python Flask sebagai backend dan HTML/CSS/JavaScript untuk tampilan.",
+    tech: ["Python", "Flask", "HTML", "CSS"],
+    image: "/project/jam-digital.png",
+    link: "https://github.com/sitinurnanung/jam-digital",
   },
-  {
-    title: "ERPEEL SCHOOL PORTAL",
-    badge: "Education",
+    {
+    slug: "game",
+    title: "game",
+    badge: "game",
     badgeColor: "#22C55E",
-    desc: "Modern, responsive program portal for Software Engineering students to share curriculums, events, and achievements.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    desc: "Game sederhana berbasis Python.",
+    longDesc: "Deskripsi panjang tentang game ini...",
+    tech: ["Python", "Pygame"],
+    image: "/project/game.png",
+    link: "https://github.com/sitinurnanung/Game-py",
   },
   {
+    slug: "ecommerce",
     title: "TOKO CASUAL",
     badge: "E-Commerce",
     badgeColor: "#F59E0B",
-    desc: "Casual clothing e-commerce web application with authentication, product catalog, shopping cart, and checkout.",
+    desc: "Casual clothing e-commerce web application.",
+    longDesc: "Deskripsi panjang tentang toko casual...",
     tech: ["PHP", "HTML5", "CSS3"],
+    image: "/project/ecommerce.png",
+    link: "https://github.com/sitinurnanung/ecommerce",
   },
 ];
-
 export const certificates = [
   { title: "Game Design: From Hobby to Ho hooks - Hooked In Minutes, Engaged For Days", image: "/sertifikat1.jpeg" },
   { title: "Form Vision To Version 1.0 : Roadmapping Your Game Effectively", image: "/sertifikat2.jpeg" },
   { title: "Introduction to Capture the Flag", image: "/sertifikat3.jpeg" },
   { title: "Coding Ai untuk Masa Depan Edukasi Digital", image: "/sertifikat4.jpeg" },
   { title: "Ai & Ethics in Game Development", image: "/sertifikat5.jpeg" },
- { title: "Cloud Computing Essentials", image: "/sertifikat6.jpeg" },
+  { title: "Cloud Computing Essentials", image: "/sertifikat6.jpeg" },
   { title: "Cybersecurity Fundamental", image: "/sertifikat7.jpeg" },
   { title: "UI/UX Design Basic", image: "/sertifikat8.jpeg" },
   { title: "Artificial Intelligence Intro", image: "/sertifikat9.jpeg" },
   { title: "Data Analytics with SQL", image: "/sertifikat10.jpeg" },
 ];
+
 export const allTech = [
   { name: "HTML5", color: "#C96A4A", sub: "Markup", icon: "html.png" },
   { name: "CSS3", color: "#3F6E9E", sub: "Styling", icon: "css.png" },
@@ -57,5 +70,4 @@ export const allTech = [
   { name: "Microsoft Excel", color: "#58352eff", sub: "Office", icon: "microsoft excel.png" },
   { name: "Microsoft Word", color: "#58352eff", sub: "Office", icon: "microsoft word.png" },
   { name: "Microsoft PowerPoint", color: "#58352eff", sub: "Office", icon: "microsoft powerpoint.png" },
-
 ];

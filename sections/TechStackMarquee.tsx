@@ -20,7 +20,7 @@ export function TechStackMarquee() {
   return (
     <section className="py-16 flex flex-col gap-8 overflow-hidden">
       {/* JUDUL — DI TENGAH */}
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 text-center reveal">
         <h2
           className="text-3xl md:text-4xl font-extrabold uppercase tracking-[0.3em]"
           style={{ color: '#3A5A40' }}
@@ -30,7 +30,7 @@ export function TechStackMarquee() {
       </div>
 
       {/* MARQUEE — DIBATASI LEBARNYA SAMA SEPERTI SECTION LAIN */}
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col gap-6 overflow-hidden">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col gap-6 overflow-hidden reveal-scale delay-100">
         {/* BARIS 1: Jalan ke Kiri */}
         <div className="animate-marquee flex gap-6 whitespace-nowrap">
           {[...allTech, ...allTech].map((tech, index) => (
