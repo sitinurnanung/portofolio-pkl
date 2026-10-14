@@ -17,10 +17,8 @@ export default async function ProjectDetail({ params }: Props) {
 
   return (
     <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      {/* CARD PEMBUNGKUS */}
       <div className="card p-6 sm:p-8">
 
-        {/* Tombol Kembali */}
         <Link
           href="/#work"
           className="inline-flex items-center gap-2 text-sm font-semibold text-[#588157] hover:text-[#3A5A40] mb-6"
@@ -28,7 +26,6 @@ export default async function ProjectDetail({ params }: Props) {
           ← Kembali ke Portfolio
         </Link>
 
-        {/* Judul & Badge */}
         <div className="flex items-center gap-3 mb-4 flex-wrap">
           <h1 className="text-3xl sm:text-4xl font-bold text-text">
             {project.title}
@@ -44,23 +41,21 @@ export default async function ProjectDetail({ params }: Props) {
           </span>
         </div>
 
-        {/* FOTO UTAMA PROJECT (diperkecil) */}
+        {/* FOTO UTAMA PROJECT (50px) */}
         <div className="flex justify-center mb-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={project.image}
             alt={project.title}
-            className="max-h-[100px] w-auto h-auto rounded-xl border-2 border-border"
+            className="max-h-[50px] w-auto h-auto rounded-xl border-2 border-border"
           />
         </div>
 
-        {/* Deskripsi Panjang */}
         <div className="mb-6">
           <h2 className="text-xl font-bold text-text mb-2">Tentang Project</h2>
           <p className="text-text-2 leading-relaxed">{project.longDesc}</p>
         </div>
 
-        {/* Tech Stack */}
         <div className="mb-6">
           <h2 className="text-xl font-bold text-text mb-2">Tech Stack</h2>
           <div className="flex gap-2 flex-wrap">
@@ -72,7 +67,6 @@ export default async function ProjectDetail({ params }: Props) {
           </div>
         </div>
 
-        {/* Tombol GitHub */}
         <a
           href={project.link}
           target="_blank"
