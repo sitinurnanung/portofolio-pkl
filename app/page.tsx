@@ -1,14 +1,16 @@
 "use client";
 
+"use client";
+
 import { useState, useEffect } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Hero } from "@/public/sections/Hero";
-import { About } from "@/public/sections/About";
-import { TechStackMarquee } from "@/public/sections/TechStackMarquee";
-import { Work } from "@/public/sections/Work";
-import { Contact } from "@/public/sections/Contact";
 import { SplashScreen } from "@/components/ui/SplashScreen";
+import { Hero } from "@/sections/Hero";
+import { About } from "@/sections/About";
+import { TechStackMarquee } from "@/sections/TechStackMarquee";
+import { Work } from "@/sections/Work";
+import { Contact } from "@/sections/Contact";
 import { ROLES } from "@/lib/data";
 
 export default function Home() {
