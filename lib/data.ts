@@ -1,28 +1,28 @@
-export const ROLES = ["Web Developer", "Software Engineer", "Fullstack Developer"];
+export const ROLES = ["Web Developer", "Software Engineer","Web Designer" ];
 
 export const projects = [
   {
-    slug: "jam-digital",
-    title: "Jam Digital",
-    badge: "Utility",
+    slug: "digital-clock",
+    title: "Digital Clock",
+    badge: "Web App",
     badgeColor: "#83c5be",
-    desc: "Aplikasi jam digital berbasis web yang menampilkan waktu secara real-time.",
+    desc: "A web based digital clock app that shows the time in real time.",
     longDesc:
       "Project ini dibuat untuk melatih pemahaman tentang Flask dan JavaScript. Jam menampilkan waktu secara real-time dengan tampilan yang clean dan minimalis. Dibuat menggunakan Python Flask sebagai backend dan HTML/CSS/JavaScript untuk tampilan.",
     tech: ["Python", "Flask", "HTML", "CSS"],
     image: "/project/jam-digital.png",
     link: "https://github.com/sitinurnanung/jam-digital",
-  },
-    {
+  }, 
+  {
     slug: "game",
-    title: "game",
-    badge: "game",
+    title: "Python Game",
+    badge: "Game",
     badgeColor: "#22C55E",
     desc: "Game sederhana berbasis Python.",
     longDesc: "Deskripsi panjang tentang game ini...",
     tech: ["Python", "Pygame"],
     image: "/project/game.png",
-    link: "https://github.com/sitinurnanung/Game-py",
+    link: "https://github.com/sitinurnanung/game",
   },
   {
     slug: "ecommerce",
@@ -35,6 +35,7 @@ export const projects = [
     image: "/project/ecommerce.png",
     link: "https://github.com/sitinurnanung/ecommerce",
   },
+   
 ];
 export const certificates = [
   { title: "Game Design: From Hobby to Ho hooks - Hooked In Minutes, Engaged For Days", image: "/sertifikat1.jpeg" },

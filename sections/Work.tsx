@@ -1,4 +1,3 @@
-// sections/Work.tsx
 "use client";
 
 import { useState } from "react";
@@ -13,7 +12,6 @@ export function Work() {
   const handleShake = (index: number, type: "project" | "cert") => {
     setShakingIndex(index);
     setShakeType(type);
-    // Reset setelah animasi selesai (400ms)
     setTimeout(() => {
       setShakingIndex(null);
       setShakeType(null);
@@ -29,7 +27,6 @@ export function Work() {
         <h2 className="section-title text-text">MY WORK</h2>
       </div>
 
-      {/* ================= TAB BUTTONS ================= */}
       <div className="flex gap-2 mb-8 flex-wrap reveal delay-100">
         {[
           { id: "projects", label: "PROJECTS" },
@@ -46,7 +43,6 @@ export function Work() {
       </div>
 
       <div>
-        {/* ================= PROJECTS ================= */}
         {activeTab === "projects" && (
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 items-stretch">
             {projects.map((project, i) => (
@@ -62,15 +58,6 @@ export function Work() {
                   <h3 className="font-bold text-xs sm:text-lg text-text">
                     {project.title}
                   </h3>
-                  <span
-                    className="px-2 sm:px-3 py-1 rounded-full text-[8px] sm:text-[10px] font-bold border"
-                    style={{
-                      color: project.badgeColor,
-                      borderColor: project.badgeColor,
-                    }}
-                  >
-                    {project.badge}
-                  </span>
                 </div>
                 <p className="text-[10px] sm:text-sm leading-relaxed text-text-2">
                   {project.desc}
@@ -83,7 +70,6 @@ export function Work() {
                   ))}
                 </div>
 
-                {/* Indikator "Lihat Detail" */}
                 <div className="mt-3 sm:mt-4 flex items-center gap-1 text-[9px] sm:text-xs font-semibold text-[#588157]">
                   <svg
                     className="w-3 h-3 sm:w-4 sm:h-4"

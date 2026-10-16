@@ -41,13 +41,13 @@ export default async function ProjectDetail({ params }: Props) {
           </span>
         </div>
 
-        {/* FOTO UTAMA PROJECT (50px) */}
-        <div className="flex justify-center mb-6">
+        {/* FOTO UTAMA PROJECT (Sudah diperbesar) */}
+        <div className="relative w-full h-80 sm:h-[450px] rounded-xl overflow-hidden border-2 border-border mb-6 bg-surface-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={project.image}
             alt={project.title}
-            className="max-h-[50px] w-auto h-auto rounded-xl border-2 border-border"
+            className="w-full h-full object-cover"
           />
         </div>
 

@@ -1,4 +1,3 @@
-// sections/About.tsx
 export function About() {
   return (
     <section
@@ -9,10 +8,8 @@ export function About() {
         <h2 className="section-title text-text">PROFILE</h2>
       </div>
 
-      {/* RESPONSIF: di HP vertikal, di desktop horizontal */}
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-6 md:gap-8 lg:gap-14">
 
-        {/* ===== FOTO ===== */}
         <div className="w-full sm:w-48 md:w-64 lg:w-72 flex-shrink-0 group reveal-left delay-100 max-w-[260px] sm:max-w-none">
           <div className="relative">
             <div
@@ -20,7 +17,6 @@ export function About() {
               style={{ backgroundColor: '#A3B18A' }}
             >
               <div className="relative aspect-[4/5] w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-inner">
-                {/* FOTO PROFILE */}
                 <img
                   src="/photo.jpg"
                   alt="Foto Profil Siti Nur Hayati"
