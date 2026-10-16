@@ -647,8 +647,7 @@ body {
   color: var(--primary);
 }
 
-/* Theme Toggle — single knob, no icons: a hollow ring in light mode, a solid
-   crescent (knob with a bite carved out via inset shadow) in dark mode. */
+/* Theme Toggle */
 .theme-toggle {
   width: 56px;
   height: 30px;
@@ -695,7 +694,7 @@ html.dark .theme-toggle-thumb {
 /* Cards */
 .card {
   background: var(--surface);
-  border: 1px solid transparent;  /* ubah dari var(--border) ke transparent */
+  border: 1px solid transparent;
   border-radius: 16px;
   box-shadow: var(--card-shadow);
   transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
@@ -706,7 +705,7 @@ html.dark .theme-toggle-thumb {
 }
 
 .card:hover {
-  border-color: var(--border-hover);  /* border muncul saat hover */
+  border-color: var(--border-hover);
   box-shadow: 0 8px 36px var(--primary-glow);
   transform: translateY(-3px);
 }
@@ -758,18 +757,18 @@ html.dark .theme-toggle-thumb {
   transform: translateY(-2px);
 }
 
-/* Badges */
 .badge {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  padding: 4px 12px;
+  gap: 2px;
+  padding: 0px 5px;
   background: var(--badge-bg);
   color: var(--badge-text);
-  border-radius: 8px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  border-radius: 3px;
+  font-size: 0.5rem;          
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.1;
   border: 1px solid rgba(163, 177, 138, 0.2);
   transition: all 0.2s;
 }
@@ -780,7 +779,6 @@ html.dark .theme-toggle-thumb {
   border-color: var(--primary);
 }
 
-/* Section Title */
 .section-title {
   font-size: 1.1rem;
   font-weight: 800;
